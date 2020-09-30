@@ -2,8 +2,9 @@ const express = require('express');
 const morgan = require('morgan');
 const compression = require('compression');
 const helmet = require('helmet');
+
 const cors = require('cors');
-const passport = require('passport');
+
 
 const middlewares = require('./middlewares');
 const api = require('./api');
@@ -23,9 +24,6 @@ app.get('/', (req, res) => {
     message: 'hello',
   });
 });
-// Passport
-app.use(passport.initialize());
-require('./lib/passport')(passport);
 
 app.use('/api/v1', api);
 

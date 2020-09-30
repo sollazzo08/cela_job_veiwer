@@ -1,5 +1,4 @@
 const express = require('express');
-const passpost = require('passport');
 
 // Top level API routes
 const states = require('./states/states.routes');

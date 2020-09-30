@@ -1,8 +1,8 @@
 const express = require('express');
 const yup = require('yup');
 const bcrypt = require('bcrypt');
-const passport = require('passport');
 const jwt = require('../../lib/jwt');
+
 const User = require('../users/users.model');
 
 
