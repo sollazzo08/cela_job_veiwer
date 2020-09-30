@@ -1,0 +1,9 @@
+Attempt to set up Oauth2.0 using googles Oauth2:
+  ✔ Read up on passport documentation @done (9/29/2020, 10:02:51 PM)
+  ✘ Get google API key for oauth @cancelled (9/29/2020, 10:02:18 PM)
+  ☐ Set up sign up and sign in for users 
+  ☐ Set up an auth route 
+  ☐ Use objection to query a user for signIn/signUp
+  ✔ Create frontend for login @done (9/9/2020, 9:11:05 PM)
+  ✔ Handle Login Click @done (9/9/2020, 9:39:57 PM)
+  ☐ If you mangage to make it to this step, go eat some icecream and sleep well

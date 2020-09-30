@@ -1,0 +1,16 @@
+.job_table {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ margin-top: 50px;
+ a {
+   padding-left: 10px;
+ }
+  table {
+    width: 50%;
+
+  }
+  table, th,td {
+    border: 1px solid black;
+  }
+}

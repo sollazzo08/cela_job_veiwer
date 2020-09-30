@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+.LoginContainer {
+  display:flex;
+  background-color: rgb(236, 236, 236);
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  .triangle {
+    width: 0;
+    height: 0;
+    border-top: 300px solid rgb(31, 49, 133);
+    border-right: 600px solid transparent;
+    position: relative;
+  }
+  .LoginBox{
+    height: 300px;
+    width:  600px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    box-shadow: 10px 10px 5px #aaaaaa;
+
+    .LoginContent {
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      .CelaTitle {
+        font-family: 'Poppins', sans-serif;
+        font-size: 30px;
+        font-weight: 500;
+        padding-bottom: 10px;
+        color: gray;
+        font-weight: 600;
+      }
+      .Buttons {
+        display: flex;
+        justify-content: flex-end;
+        .Btn {
+          height: 30px;
+          width: 90px;
+          span {
+            font-weight: 500;
+            font-size: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
