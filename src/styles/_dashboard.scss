@@ -1,0 +1,11 @@
+.container {
+  display: flex;
+  .dashboard {
+    width: 100%;
+    background-color: #e4e6f0;
+    .dashModulesContainer{
+      display: flex;
+      
+    }
+  }
+}
