@@ -1,4 +1,4 @@
-.jobsContainer {
+.schedulerContainer {
   display: flex;
   flex-direction: column;
   background-color: rgba(255, 255, 255, 0.9);
@@ -19,40 +19,13 @@
     .faPlusCircle {
       padding-right: 8px;
     }
-    .addJobLink {
-      color: green;
-      font-weight: 600;
-    }
   
   }
   .preview {
     margin: 15px 30px;
-  
-      .info {
-        display: flex;
-        padding-bottom: 20px;
-        
-        .numOfJobs {
-          display: flex;
-          flex-direction: column;
-          
-          span {
-            color: green;
-            font-weight:700;
-          }
-          p {
-            background: none;
-            font-weight: 700;
-            color: grey;
-            font-size: 14px;
-            
-          }
-        }
-      }
-      p {
    
     }
-    .jobPreview {
+    .schedulePreview {
       background-color: rgba(28, 69, 165, 0.1);
       padding: 20px 20px;
 
@@ -64,4 +37,3 @@
     }
   }
 
-}

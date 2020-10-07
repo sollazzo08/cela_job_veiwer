@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap");
 .navbar {
   height: 80px;
   width: 100%;
@@ -225,16 +226,342 @@
   font-size: 30px;
   font-weight: 500;
   padding-bottom: 10px;
+  color: gray;
+  font-weight: 600;
 }
 
-.LoginContainer .LoginBox .LoginContent .LoginBtn {
+.LoginContainer .LoginBox .LoginContent .Buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.LoginContainer .LoginBox .LoginContent .Buttons .Btn {
   height: 30px;
   width: 90px;
 }
 
-.LoginContainer .LoginBox .LoginContent .LoginBtn span {
+.LoginContainer .LoginBox .LoginContent .Buttons .Btn span {
   font-weight: 500;
   font-size: 20px;
+}
+
+.sideContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  max-height: 100;
+  width: 275px;
+  height: 100vh;
+  background-color: white;
+  -webkit-box-shadow: 0px 0px 6px #62646b;
+          box-shadow: 0px 0px 6px #62646b;
+}
+
+.sideContainer .userSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  position: relative;
+}
+
+.sideContainer .userSection img {
+  border-radius: 50%;
+  height: 55px;
+}
+
+.sideContainer .userSection .username {
+  padding-left: 15px;
+}
+
+.sideContainer .userSection .faAngleDown {
+  padding-left: 8px;
+  margin-top: 5px;
+}
+
+.sideContainer .userSection .dropdownContainer {
+  width: 200px;
+  height: 100px;
+  background-color: #1f3185;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: absolute;
+  top: 100%;
+  border-radius: 8px;
+  -webkit-box-shadow: 0px 0px 6px #62646b;
+          box-shadow: 0px 0px 6px #62646b;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sideContainer .userSection .dropdownContainer hr {
+  width: 85%;
+  margin: 0 10px;
+}
+
+.sideContainer .userSection .dropdownContainer a {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  text-align: center;
+  text-decoration: none;
+  color: dimgray;
+  padding: 10px 10px;
+  color: white;
+}
+
+.sideContainer .lowerSidebar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.sideContainer .lowerSidebar .menuSection {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 80vh;
+}
+
+.sideContainer .lowerSidebar .menuSection .btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: 'Poppins', sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  max-width: 100%;
+  height: 40px;
+  background-color: white;
+  border: 0px white;
+  margin-bottom: 3px;
+  color: dimgrey;
+  outline: none;
+}
+
+.sideContainer .lowerSidebar .menuSection .btn .icons {
+  text-align: left;
+  padding-left: 20px;
+  max-width: 100%;
+}
+
+.sideContainer .lowerSidebar .menuSection .btn span {
+  text-align: left;
+  padding-left: 20px;
+}
+
+.sideContainer .lowerSidebar .menuSection .btn:hover, .sideContainer .lowerSidebar .menuSection .btn:focus {
+  -webkit-box-shadow: 0px 0px 6px #1f3185;
+          box-shadow: 0px 0px 6px #1f3185;
+  color: #1f3185;
+  border-left: 8px solid #1f3185;
+}
+
+.sideContainer .lowerSidebar .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 50px;
+  font-weight: 800;
+  color: #1f3185;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.container .dashboard {
+  width: 100%;
+  background-color: #edeff891;
+}
+
+.container .dashboard .dashModulesContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.jobsContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.9);
+  min-height: 200px;
+  width: 410px;
+  margin: 54px 50px;
+  -webkit-box-shadow: 0px 0px 4px #62646b;
+          box-shadow: 0px 0px 4px #62646b;
+  border-radius: 3px;
+}
+
+.jobsContainer .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 20px 30px;
+}
+
+.jobsContainer .header span {
+  font-weight: 700;
+}
+
+.jobsContainer .header .faPlusCircle {
+  padding-right: 8px;
+}
+
+.jobsContainer .header .addJobLink {
+  color: green;
+  font-weight: 600;
+}
+
+.jobsContainer .preview {
+  margin: 15px 30px;
+}
+
+.jobsContainer .preview .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-bottom: 20px;
+}
+
+.jobsContainer .preview .info .numOfJobs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.jobsContainer .preview .info .numOfJobs span {
+  color: green;
+  font-weight: 700;
+}
+
+.jobsContainer .preview .info .numOfJobs p {
+  background: none;
+  font-weight: 700;
+  color: grey;
+  font-size: 14px;
+}
+
+.jobsContainer .preview .jobPreview {
+  background-color: rgba(28, 69, 165, 0.1);
+  padding: 20px 20px;
+}
+
+.jobsContainer .preview .jobPreview .date {
+  padding-bottom: 10px;
+  color: grey;
+  font-weight: 600;
+}
+
+.schedulerContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: rgba(255, 255, 255, 0.9);
+  min-height: 200px;
+  width: 410px;
+  margin: 54px 50px;
+  -webkit-box-shadow: 0px 0px 4px #62646b;
+          box-shadow: 0px 0px 4px #62646b;
+  border-radius: 3px;
+}
+
+.schedulerContainer .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 20px 30px;
+}
+
+.schedulerContainer .header span {
+  font-weight: 700;
+}
+
+.schedulerContainer .header .faPlusCircle {
+  padding-right: 8px;
+}
+
+.schedulerContainer .preview {
+  margin: 15px 30px;
+}
+
+.schedulerContainer .schedulePreview {
+  background-color: rgba(28, 69, 165, 0.1);
+  padding: 20px 20px;
+}
+
+.schedulerContainer .schedulePreview .date {
+  padding-bottom: 10px;
+  color: grey;
+  font-weight: 600;
 }
 
 * {

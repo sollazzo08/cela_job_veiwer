@@ -9,17 +9,26 @@ function JobsModule() {
       <div className="header">
         <span>Jobs</span>
         <div className="addJobLink">
-         <FontAwesomeIcon icon={faPlusCircle} /> 
+         <FontAwesomeIcon className="faPlusCircle" icon={faPlusCircle} /> 
          Add Job
         </div>
       </div>
       <hr></hr>
       <div className="preview">
-        <h5>OCT 1, 2020 10:19PM</h5>
-        <p>Minim mollit nulla non nulla Lorem esse enim minim proident 
-            magna fugiat aute nisi in. Elit amet velit duis quis labore 
-            ad culpa incididunt proident deserunt pariatur. Enim non ea 
-            adipisicing Lorem.</p>
+        <div className="info">
+          <div className="numOfJobs">
+              <span>56</span>
+              <p>JOBS</p>
+          </div>
+          
+        </div>
+        <div className="jobPreview">
+        <div className="date">OCT 1, 2020 10:19PM</div>
+        <p>    
+          Minim mollit nulla non nulla Lorem esse enim minim proident 
+          magna fugiat aute nisi in. Elit amet velit duis quis labore 
+        </p>      
+        </div>
       </div> 
     </div>
   )
