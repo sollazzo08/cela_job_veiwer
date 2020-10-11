@@ -1,6 +1,6 @@
 import React from "react";
-import '../../styles/_formModal.scss';
-import JobForm from '../JobForm';
+//import '../../styles/_formModal.scss';
+import JobForm from '../jobs/JobForm';
 
 
 function FormModal(props) {
@@ -20,7 +20,7 @@ function FormModal(props) {
     </div>
   </div>
   )
-}
+}   
 
 
 

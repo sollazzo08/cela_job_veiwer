@@ -8,13 +8,14 @@ import {Link} from 'react-router-dom';
 function Sidebar({dropdown, setDropdown }) {
 
   const [open,isOpen] = useState(false);
+  const [click, isClicked] = useState(false);
 
   const ProfileDropdown = () => {
     return (
       <div className="dropdownContainer">
-        <a  href="/">View Profile</a>
+        <Link href="/">View Profile</Link>
         <hr></hr>
-        <a href="/">Sign Out</a>
+        <Link href="/">Sign Out</Link>
       </div>
     )
   }
@@ -34,38 +35,27 @@ function Sidebar({dropdown, setDropdown }) {
       <hr />
       <div className="lowerSidebar">
       <div className="menuSection">
-          <button className="btn">
+          <Link className="btn" to="/dashboard">
             <div class="icons">
-              <FontAwesomeIcon  className="btnIcons"
-                                icon={faScroll}
-                                />
+              <FontAwesomeIcon  className="btnIcons" icon={faScroll} />
             </div>
             <span>Dashboard</span>
-          </button>
-          <Link to="/jobs">
-            <button className="btn">
+          </Link>
+          <Link className="btn" to="/dashboard/jobs">
             <div class="icons">
-              <FontAwesomeIcon  className="btnIcons"
-                                icon={faBookReader}
-                                />
+              <FontAwesomeIcon  className="btnIcons" icon={faBookReader} />
             </div>
             <span>Jobs</span>
-            </button>
-          </Link>
+          </Link>  
             <button className="btn">
             <div class="icons">
-              <FontAwesomeIcon  className="btnIcons"
-                                icon={faBookReader}
-                                />
+              <FontAwesomeIcon  className="btnIcons" icon={faBookReader} />
             </div>
             <span> Scheduler</span>
             </button>
-          
           <button className="btn">
           <div class="icons">
-            <FontAwesomeIcon  className="btnIcons"
-                              icon={faCalendar}
-                              />
+            <FontAwesomeIcon  className="btnIcons" icon={faCalendar} />
           </div>
           <span>Planner</span>
           </button>

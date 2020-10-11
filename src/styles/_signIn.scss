@@ -1,0 +1,61 @@
+.signIn_content {
+  display: flex;
+  flex-direction: column;
+  color: dimgray;
+  margin: 18px 18px;
+
+  .welcome {
+    font-size: 25px;
+  }
+
+  .email {
+    display: flex;
+    flex-direction: column;
+    padding-top: 20px;
+    font-size: 15px;
+
+    input {
+      padding: 7px 7px;
+    }
+  }
+  .password {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 10px;
+    font-size: 15px;
+    .password_label {
+      display: flex;
+      justify-content: space-between;
+    }
+    .forgot_pass {
+      font-weight: 700;
+      font-size: 13px;
+      align-self: flex-end;
+      color: rgb(31, 49, 133);
+      text-decoration: none;
+    }
+    input {
+      padding: 7px 7px;
+    }
+  }
+  .checkbox {
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    label {
+      padding-left: 10px;
+      font-size: 15px;
+    }
+
+  }
+
+  .signIn_btn {
+    padding: 7px 7px;
+    background-color:  rgb(31, 49, 133);
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+  }
+}

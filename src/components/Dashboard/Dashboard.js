@@ -4,7 +4,7 @@ import JobModule from './DashModules/JobsModule';
 import SchedulerModule from './DashModules/SchedulerModule';
 import PlannerModule from './DashModules/PlannerModule';
 import { BrowserRouter, Route } from 'react-router-dom';
-import JobViewWrapper from '../JobViewerWrapper';
+
 
 import '../../styles/_dashboard.scss';
 
@@ -12,27 +12,23 @@ import '../../styles/_dashboard.scss';
 function Dashboard() {
   const [dropdown, setDropdown] = useState(false);
 
-
   return (
-    <div className="container">
+    <div className="dashContainer">
       <Sidebar dropdown={dropdown} setDropdown={setDropdown} />
-      <BrowserRouter>
-        <div className="dashboard">
-          <Route path="/jobs" exact component={JobViewWrapper} />
-          {/* <div className="dashModulesContainer">
+      <div className="dashboard">
+        <div className="dashModulesContainer">
           <div className="column1">
-          <JobModule />
-          <JobModule />
+            <JobModule /> 
+            <JobModule />
           </div>
           <div className="column2">
-          <SchedulerModule />
+            <SchedulerModule />
           </div>
-          <div className="column2">
-
+          <div className="column3">
+    
           </div>
-        </div> */}
         </div>
-      </BrowserRouter>
+      </div>
     </div>
   )
 }

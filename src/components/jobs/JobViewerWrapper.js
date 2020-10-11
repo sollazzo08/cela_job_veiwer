@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
 import FilterSection from './FilterSection';
 import JobList from './JobList'
-import '../styles/_table.scss';
+import Sidebar from '../Dashboard/Sidebar/Sidebar';
+import '../../styles/_jobViewer.scss';
 
 class JobViewerWrapper extends Component {
 
@@ -24,12 +25,15 @@ class JobViewerWrapper extends Component {
   render() {
     console.log(this.state.jobs);
     return (
-      <div>
+      <div className="jobViewerContainer">
+        <Sidebar />
+        <div className="jobViewSection">
         <FilterSection jobs = {this.state.jobs} addJob ={this.addJob}/>
+        <hr></hr>
         <div className="job_table">
           <JobList jobs={this.state.jobs}/>
         </div>
-
+        </div>
       </div>
     )
   }

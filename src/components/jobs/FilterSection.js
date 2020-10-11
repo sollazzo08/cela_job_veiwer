@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import SearchBar from './SearchBar';
-import '../styles/style.css';
-import FormModal from './modals/FormModal';
+import '../../styles/style.css';
+import FormModal from '../modals/FormModal';
 
 function FilterSection(props) {
 

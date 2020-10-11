@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import Job from './Job';
-import '../styles/_table.scss';
+import '../../styles/_jobViewer.scss';
 
 
 function JobList(props){

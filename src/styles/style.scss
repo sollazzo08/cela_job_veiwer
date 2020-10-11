@@ -1,13 +1,19 @@
 @import './navbar';
 @import './filters';
-@import './table';
+@import './jobViewer';
 @import './jobform';
 @import './loginPage';
 @import './sidebar';
 @import './dashboard';
 @import './jobsModule';
 @import './scheduler';
+@import './logo';
+@import './signIn';
 * {
   margin: 0 0;
+}
+
+.jobViewContainer {
+  display: flex;
 }
 

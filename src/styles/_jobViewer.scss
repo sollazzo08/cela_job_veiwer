@@ -1,3 +1,17 @@
+.jobViewerContainer {
+  display: flex;
+  height: 100%;
+
+  .jobViewSection {
+    width: 100%;
+    background-color: #edeff891;
+
+    hr {
+      margin: 16px 0px;
+    }
+  }
+}
+
 .job_table {
  display: flex;
  justify-content: center;
