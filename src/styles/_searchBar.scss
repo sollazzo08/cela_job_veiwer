@@ -1,0 +1,44 @@
+.searchBar_container {
+
+  display: inline-flex;
+
+  .searchBar_content {
+    display: inline-flex;
+    overflow: hidden;
+    border-radius: 8px;
+    border: 1px rgb(31, 49, 133);
+    box-shadow: 0px 0px 4px rgb(98, 100, 107);
+  
+
+    form {
+      display: inline-flex;
+      input {
+        padding: 10px 10px;
+        width: 200px;
+        border: none;
+        outline: none;
+       
+      }
+      input::placeholder {
+        padding-left: 20px;
+        font-size: 17px;
+      }
+      .search_btn {
+        text-decoration: none;
+        background-color: rgb(31, 49, 133);
+        color: white;
+        font-size: 17px;
+      }
+    }
+
+  }
+  .searchBar {
+    width: 100%;
+    .icon {
+      display: flex;
+      position: absolute;
+      padding: 0.5rem;
+      color: dimgray;
+    }
+  }
+}

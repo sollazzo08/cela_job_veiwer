@@ -1,6 +1,7 @@
 .jobViewerContainer {
   display: flex;
   height: 100%;
+  width: 100%;
 
   .jobViewSection {
     width: 100%;
@@ -17,14 +18,16 @@
  justify-content: center;
  align-items: center;
  margin-top: 50px;
+ 
  a {
    padding-left: 10px;
  }
   table {
-    width: 50%;
+    width: 80%;
 
   }
   table, th,td {
     border: 1px solid black;
   }
+  
 }
