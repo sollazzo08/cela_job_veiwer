@@ -4,6 +4,16 @@
   color: dimgray;
   margin: 18px 18px;
 
+  .window_close_icon {
+    display: flex;
+    flex-direction: row-reverse;
+    font-size: 25px;
+  }
+
+  .window_close_icon:hover {
+    color: red;
+  }
+
   .welcome {
     font-size: 25px;
   }

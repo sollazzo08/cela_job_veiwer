@@ -1,8 +1,9 @@
 import React, { useState } from 'react'
 import SearchBar from './SearchBar';
-import '../../styles/style.css';
-import '../../styles/_filters.scss';
 import FormModal from '../modals/FormModal';
+import '../../styles/_jobFilter.scss';
+import '../../styles/style.css';
+
 
 function FilterSection(props) {
 
@@ -13,15 +14,15 @@ function FilterSection(props) {
       <div>
         <div className="filter_section">
           <SearchBar />
-              <div className="dropdowns">
+              <div className="dropdown_container">
                 <div className="dropdown_date">
-                  <select className="dropdown" name="date" id="date">
+                  <select className="filter_dropdown" name="date" id="date">
                     <option value="">Newest</option>
                     <option value="">Oldest</option>
                   </select>
                 </div> 
                 <div className="dropdown_type">
-                  <select className="dropdown" name="date" id="">
+                  <select className="filter_dropdown" name="date" id="">
                     <option value="">Roofing</option>
                     <option value="">Siding</option>
                     <option value="">Windows</option>
@@ -30,7 +31,7 @@ function FilterSection(props) {
                 </div>
 
               </div>
-              <button className="btn" onClick={() => setIsOpened(!isOpened)}>Add Job</button> {/*Bring up pop up modal */}
+              <button className="filter_btn" onClick={() => setIsOpened(!isOpened)}>Add Job</button> {/*Bring up pop up modal */}
               {isOpened && <FormModal jobs = {props.jobs} addJob={props.addJob} setIsOpened={setIsOpened}/>}
         </div>
       </div>

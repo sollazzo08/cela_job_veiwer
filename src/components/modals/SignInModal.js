@@ -1,15 +1,24 @@
 import React from 'react'
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import {faWindowClose} from '@fortawesome/free-solid-svg-icons';
 import '../../styles/_modal.scss';
 import '../../styles/_logo.scss';
 import '../../styles/_signIn.scss';
+import { isDOMComponent } from 'react-dom/test-utils';
 
 function SignInModal(props) {
   console.log(props);
   return (
 
-    <div className="modalContainer">
+    <div className="modal_container">
       <div className="modal">
           <div className="signIn_content">
+            <div className="window_close_icon">
+              <FontAwesomeIcon 
+                icon={faWindowClose}
+                onClick={() => props.isOpen(false)}
+              />
+            </div>
             <div className="logo_signin">CELA</div>
             <div className="welcome">Welcome Back!</div>
             <div className="email">

@@ -16,11 +16,16 @@
   }
 
   .navLinks {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     .signin {
       font-size: 20px;
       text-decoration: none;
-      padding-right: 30px;
+      padding: 0 30px;
       color: rgb(31, 49, 133);
+      
     }
   }
 }

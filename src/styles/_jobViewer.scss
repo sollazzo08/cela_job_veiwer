@@ -11,23 +11,9 @@
       margin: 16px 0px;
     }
   }
-}
-
-.job_table {
- display: flex;
- justify-content: center;
- align-items: center;
- margin-top: 50px;
- 
- a {
-   padding-left: 10px;
- }
-  table {
-    width: 80%;
-
+  .job_table_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
-  table, th,td {
-    border: 1px solid black;
-  }
-  
 }

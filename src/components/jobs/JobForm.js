@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {Formik, Field, Form} from 'formik';
-import '../../styles/_jobform.scss';
+//import '../../styles/_jobform.scss';
 
 class JobForm extends Component {
 

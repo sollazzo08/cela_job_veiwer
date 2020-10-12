@@ -2,7 +2,10 @@ import React, { Component } from 'react'
 import FilterSection from './FilterSection';
 import JobList from './JobList'
 import Sidebar from '../Dashboard/Sidebar/Sidebar';
+import Pagination from '../jobs/Pagination';
 import '../../styles/_jobViewer.scss';
+
+
 
 class JobViewerWrapper extends Component {
 
@@ -30,8 +33,9 @@ class JobViewerWrapper extends Component {
         <div className="jobViewSection">
         <FilterSection jobs = {this.state.jobs} addJob ={this.addJob}/>
         <hr></hr>
-        <div className="job_table">
+        <div className="job_table_container">
           <JobList jobs={this.state.jobs}/>
+          <Pagination />
         </div>
         </div>
       </div>
