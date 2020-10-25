@@ -1,9 +1,10 @@
 import React, {useState} from 'react'
-import '../../../styles/_sidebar.scss'
 import faker from 'faker';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faAngleDown, faScroll, faBookReader, faCalendarAlt, faCalendar} from '@fortawesome/free-solid-svg-icons';
 import {Link} from 'react-router-dom';
+import '../../../styles/_sidebar.scss'
+import CelaLogo from '../../../images/CELA LOGO.png';
 
 function Sidebar({dropdown, setDropdown }) {
 
@@ -45,7 +46,7 @@ function Sidebar({dropdown, setDropdown }) {
             <div class="icons">
               <FontAwesomeIcon  className="btnIcons" icon={faBookReader} />
             </div>
-            <span>Jobs</span>
+            <span>Job Viewer</span>
           </Link>  
             <button className="btn">
             <div class="icons">
@@ -61,7 +62,7 @@ function Sidebar({dropdown, setDropdown }) {
           </button>
       </div>
       <div className="logo">
-        CELA
+        <img src={CelaLogo} alt="cela logo" width="200" height="100" />
       </div>
     </div>
     </div>

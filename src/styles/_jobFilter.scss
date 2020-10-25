@@ -1,31 +1,51 @@
 .filter_section {
-  display: flex;
+  display: grid;
+ 
+  grid-template-columns:  300px 400px auto auto ;
+  grid-template-rows: [filterRow] 75px;
   align-items: center;
-  height: 40px;
-  margin-top: 20px;
+  background-color: #edeff891;
+
+  .grid_item {
+    display: grid;
+  
+    
+    .logo {
+      font-size: 42px;
+      color: rgb(31, 49, 133);
+      text-align: left;
+      padding-left: 20px;
+      font-family: 'Yanone Kaffeesatz', sans-serif;
+    }
+    .searchbar_item {
+      justify-self: left
+    }
+  }
 
   .dropdown_container {
     display: flex;
-
     .dropdown_date {
       padding-right: 50px;
     }
     
     .filter_dropdown {
-    border-radius: 8px;
+     border-radius: 8px;
      height: 28px;
      font-weight: 500;
      font-size: 20px;
      padding: 0px 20px;
-
    }
   }
 
   .filter_btn {
+
     height: 28px;
     font-size: 20px;
     font-weight: 500;
     background-color: rgb(31, 49, 133);
+    width: 150px;
+    justify-self: center;
     color: white; 
   }
+  
 }

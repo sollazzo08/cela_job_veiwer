@@ -1,8 +1,8 @@
 import React, { useState } from 'react'
 import SearchBar from './SearchBar';
-import FormModal from '../modals/FormModal';
+import FormModal from '../Modals/JobFormModal';
 import '../../styles/_jobFilter.scss';
-import '../../styles/style.css';
+
 
 
 function FilterSection(props) {
@@ -13,7 +13,15 @@ function FilterSection(props) {
     return (
       <div>
         <div className="filter_section">
-          <SearchBar />
+          <div className="grid_item">
+            <div className="logo">Job Viewer</div>
+          </div>
+          <div className="grid_item">
+            <div className="searchbar_item">
+              <SearchBar />
+            </div>
+          </div>
+          <div className="grid_item">
               <div className="dropdown_container">
                 <div className="dropdown_date">
                   <select className="filter_dropdown" name="date" id="date">
@@ -29,10 +37,12 @@ function FilterSection(props) {
                     <option value="">Gutters</option>
                   </select>
                 </div>
-
               </div>
+          </div>
+          <div className="grid_item">
               <button className="filter_btn" onClick={() => setIsOpened(!isOpened)}>Add Job</button> {/*Bring up pop up modal */}
               {isOpened && <FormModal jobs = {props.jobs} addJob={props.addJob} setIsOpened={setIsOpened}/>}
+          </div>
         </div>
       </div>
     )

@@ -10,11 +10,18 @@
   background: rgba(0, 0, 0, 0.5);
 
   .modal {
-    width: 350px;
+
+    min-width: 350px;
     min-height: 400px;
     background-color: white;
     padding: 20px 20px;
   }
+
+  .jobFormModal  {
+    padding: 0 0;
+    display: flex;
+  }
+
 
 }
 

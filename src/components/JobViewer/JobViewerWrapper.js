@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import FilterSection from './FilterSection';
-import JobList from './JobList'
+import JobList from './JobTable'
 import Sidebar from '../Dashboard/Sidebar/Sidebar';
-import Pagination from '../jobs/Pagination';
+import Pagination from '../JobViewer/Pagination';
 import '../../styles/_jobViewer.scss';
 
 

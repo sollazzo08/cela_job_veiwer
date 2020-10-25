@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { Link } from 'react-router-dom';
-import SignInModal from '../modals/SignInModal';
+import SignInModal from '../Modals/SignInModal';
 import '../../styles/_navbar.scss';
 
 function NavBar() {
@@ -10,7 +10,7 @@ function NavBar() {
   return (
     <div>
       <nav className="navbar">
-        <div className="logo">CELA HOME IMPROVEMENTS</div>
+        <div className="logo">Dashboard</div>
         <div className="navLinks">
           <Link
             className="signin"

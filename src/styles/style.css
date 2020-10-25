@@ -1,8 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital@1&display=swap");
 .navbar {
-  height: 80px;
+  height: 75px;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -13,34 +13,43 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #1f3185;
+  background-color: #edeff891;
 }
 
 .navbar .logo {
-  font-size: 30px;
-  color: white;
+  font-size: 42px;
+  color: #1f3185;
   padding-left: 20px;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
 }
 
 .navbar .navLinks {
-  font-family: 'Poppins', sans-serif;
-  font-weight: 700;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.navbar .navLinks .login {
+.navbar .navLinks .signin {
   font-size: 20px;
   text-decoration: none;
-  padding-right: 30px;
-  color: white;
+  padding: 0 30px;
+  color: #1f3185;
 }
 
 .filter_section {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -48,24 +57,25 @@
   margin-top: 20px;
 }
 
-.filter_section .searchbar {
-  font-size: 23px;
-  font-weight: 500;
+.filter_section .dropdown_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-.filter_section .searchbar input {
-  height: 22px;
-  width: 200px;
+.filter_section .dropdown_container .dropdown_date {
+  padding-right: 50px;
 }
 
-.filter_section .dropdowns .dropdown {
+.filter_section .dropdown_container .filter_dropdown {
+  border-radius: 8px;
   height: 28px;
   font-weight: 500;
   font-size: 20px;
-  padding-right: 15px;
+  padding: 0px 20px;
 }
 
-.filter_section .btn {
+.filter_section .filter_btn {
   height: 28px;
   font-size: 20px;
   font-weight: 500;
@@ -73,32 +83,24 @@
   color: white;
 }
 
-.job_table {
+.jobViewerContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-top: 50px;
+  height: 100%;
+  width: 100%;
 }
 
-.job_table a {
-  padding-left: 10px;
+.jobViewerContainer .jobViewSection {
+  width: 100%;
+  background-color: #edeff891;
 }
 
-.job_table table {
-  width: 50%;
+.jobViewerContainer .jobViewSection hr {
+  margin: 16px 0px;
 }
 
-.job_table table, .job_table th, .job_table td {
-  border: 1px solid black;
-}
-
-.form_container {
+.jobViewerContainer .job_table_container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -109,150 +111,6 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.form_container .myForm {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 400px;
-  padding: 20px;
-}
-
-.form_container .myForm .label {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  font-size: 20px;
-  font-weight: 500;
-  color: #696565;
-  width: 250px;
-}
-
-.form_container .myForm .checkbox {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  width: 200px;
-  padding-top: 10px;
-  font-size: 21px;
-}
-
-.form_container .myForm .input {
-  -webkit-box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.2);
-          box-shadow: 0px 0px 8px 1px rgba(0, 0, 0, 0.2);
-  border: 0.1px solid #1f3185;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 22px;
-  width: 250px;
-  border-radius: 10px;
-}
-
-.LoginContainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  background-color: #ececec;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  height: 100vh;
-}
-
-.LoginContainer .triangle {
-  width: 0;
-  height: 0;
-  border-top: 300px solid #1f3185;
-  border-right: 600px solid transparent;
-  position: relative;
-}
-
-.LoginContainer .LoginBox {
-  height: 300px;
-  width: 600px;
-  background-color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-shadow: 10px 10px 5px #aaaaaa;
-          box-shadow: 10px 10px 5px #aaaaaa;
-}
-
-.LoginContainer .LoginBox .LoginContent {
-  position: absolute;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.LoginContainer .LoginBox .LoginContent .CelaTitle {
-  font-family: 'Poppins', sans-serif;
-  font-size: 30px;
-  font-weight: 500;
-  padding-bottom: 10px;
-  color: gray;
-  font-weight: 600;
-}
-
-.LoginContainer .LoginBox .LoginContent .Buttons {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-}
-
-.LoginContainer .LoginBox .LoginContent .Buttons .Btn {
-  height: 30px;
-  width: 90px;
-}
-
-.LoginContainer .LoginBox .LoginContent .Buttons .Btn span {
-  font-weight: 500;
-  font-size: 20px;
 }
 
 .sideContainer {
@@ -286,7 +144,7 @@
 }
 
 .sideContainer .userSection img {
-  border-radius: 50%;
+  border-radius: 8%;
   height: 55px;
 }
 
@@ -350,6 +208,7 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   height: 100%;
+  padding-top: 10px;
 }
 
 .sideContainer .lowerSidebar .menuSection {
@@ -409,7 +268,7 @@
       -ms-flex-align: center;
           align-items: center;
   font-size: 50px;
-  font-weight: 800;
+  font-weight: 600;
   color: #1f3185;
 }
 
@@ -572,13 +431,192 @@
   font-weight: 600;
 }
 
-* {
-  margin: 0 0;
+.logo_signin {
+  color: #1f3185;
+  font-size: 50px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
 }
 
-.jobViewContainer {
+.signIn_content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  color: dimgray;
+  margin: 18px 18px;
+}
+
+.signIn_content .window_close_icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  font-size: 25px;
+}
+
+.signIn_content .window_close_icon:hover {
+  color: red;
+}
+
+.signIn_content .welcome {
+  font-size: 25px;
+}
+
+.signIn_content .email {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 20px;
+  font-size: 15px;
+}
+
+.signIn_content .email input {
+  padding: 7px 7px;
+}
+
+.signIn_content .password {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-top: 10px;
+  font-size: 15px;
+}
+
+.signIn_content .password .password_label {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.signIn_content .password .forgot_pass {
+  font-weight: 700;
+  font-size: 13px;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  color: #1f3185;
+  text-decoration: none;
+}
+
+.signIn_content .password input {
+  padding: 7px 7px;
+}
+
+.signIn_content .checkbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.signIn_content .checkbox label {
+  padding-left: 10px;
+  font-size: 15px;
+}
+
+.signIn_content .signIn_btn {
+  padding: 7px 7px;
+  background-color: #1f3185;
+  color: white;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.searchBar_container {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.searchBar_container .searchBar_content {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  overflow: hidden;
+  border-radius: 8px;
+  border: 1px #1f3185;
+  -webkit-box-shadow: 0px 0px 4px #62646b;
+          box-shadow: 0px 0px 4px #62646b;
+}
+
+.searchBar_container .searchBar_content form {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+.searchBar_container .searchBar_content form input {
+  padding: 10px 10px;
+  width: 200px;
+  border: none;
+  outline: none;
+}
+
+.searchBar_container .searchBar_content form input::-webkit-input-placeholder {
+  padding-left: 20px;
+  font-size: 17px;
+}
+
+.searchBar_container .searchBar_content form input:-ms-input-placeholder {
+  padding-left: 20px;
+  font-size: 17px;
+}
+
+.searchBar_container .searchBar_content form input::-ms-input-placeholder {
+  padding-left: 20px;
+  font-size: 17px;
+}
+
+.searchBar_container .searchBar_content form input::placeholder {
+  padding-left: 20px;
+  font-size: 17px;
+}
+
+.searchBar_container .searchBar_content form .search_btn {
+  text-decoration: none;
+  background-color: #1f3185;
+  color: white;
+  font-size: 17px;
+}
+
+.searchBar_container .searchBar {
+  width: 100%;
+}
+
+.searchBar_container .searchBar .icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  padding: 0.5rem;
+  color: dimgray;
+}
+
+* {
+  margin: 0 0;
 }
 /*# sourceMappingURL=style.css.map */

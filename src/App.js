@@ -1,7 +1,8 @@
 import React from 'react';
-import JobViewWrapper from './components/jobs/JobViewerWrapper.js';
+import JobViewWrapper from './components/JobViewer/JobViewerWrapper.js';
 import Dashboard from './components/Dashboard/Dashboard';
 import {BrowserRouter, Route, Switch} from 'react-router-dom';
+import './styles/style.scss';
 
 
 
